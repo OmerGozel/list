@@ -28,20 +28,6 @@ List::~List(void)
  }
 }
 
-void List::DisplayList (void)
-{
- int num = 0;
- 
- Node* currNode = head;
-
- while (currNode != NULL)
- {
- cout << currNode -> data << endl;
- currNode = currNode -> next;
- 
- }
-}
-
 Node* List::InsertNode (int index, double x)
 {
 	if (index < 0) return NULL;
